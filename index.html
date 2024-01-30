@@ -1,7 +1,11 @@
 
 <!DOCTYPE html>
 <html>
-  <body>
+  <body> 
+    <p id="x">The keycode will appear here...</p>
+    <p id="y">The button click will appear here...</p>
+    <button class="btn1" tabindex="0">check1</button>
+    <button class="btn2" tabindex="1">check2</button>
     <script>
       window.onload = () => {
         document.body.focus();
@@ -21,9 +25,5 @@
         document.getElementById("y").innerHTML = "Button 2";
       });
     </script>
-    <p id="x">The keycode will appear here...</p>
-    <p id="y">The button click will appear here...</p>
-    <button class="btn1" tabindex="0">check1</button>
-    <button class="btn2" tabindex="1">check2</button>
   </body>
 </html>
