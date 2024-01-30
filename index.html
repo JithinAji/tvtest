@@ -2,16 +2,29 @@
 <html>
   <body>
     <script>
+      let areax = document.getElementById("x");
+      let areay = document.getElementById("y");
       window.onload = () => {
         document.body.focus();
       };
       document.addEventListener("keydown", function (event) {
-        document.getElementById("x").innerHTML = event.which;
+        areax.innerHTML = event.which;
       });
-      document.addEventListener('keypress', function(event) {
- document.getElementById("x").innerHTML = event.key;
-});
+      document.addEventListener("keypress", function (event) {
+        areax.innerHTML = event.key;
+      });
+
+      document.querySelector(".btn1").addEventListener("click", () => {
+        areay.innerHTML = "Button 1";
+      });
+
+      document.querySelector(".btn2").addEventListener("click", () => {
+        areay.innerHTML = "Button 2";
+      });
     </script>
     <p id="x">The keycode will appear here...</p>
+    <p id="y">The button click will appear here...</p>
+    <button class="btn1" tabindex="0">check1</button>
+    <button class="btn2" tabindex="1">check2</button>
   </body>
 </html>
