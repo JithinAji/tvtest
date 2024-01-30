@@ -8,6 +8,9 @@
       document.addEventListener("keydown", function (event) {
         document.getElementById("x").innerHTML = event.which;
       });
+      document.addEventListener('keypress', function(event) {
+ document.getElementById("x").innerHTML = event.key;
+});
     </script>
     <p id="x">The keycode will appear here...</p>
   </body>
